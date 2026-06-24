@@ -1,4 +1,5 @@
 <h1 align="center">Configuring Lake Formation permissions</h1>
+<p>Before we implement Lake Formation permissions, we're going to create a new data lake user and configure their permissions using just IAM permissions.</p>
 <h2>Creating a new user with IAM permissions</h2>
 <h3>On AWS Management Concole, go to the Policies on left-menu, filter in "Athena" and select AmazonAthenaFullAccess policy</h3>
 <p align="left">
@@ -47,3 +48,20 @@
 <p align="left">
   <img src="screenshots/11.png" width="1000" height="600"/>
 </p>
+<p>-------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+<h2>Managing permissions with AWS Lake Formation.</h2>
+<p>With our initial setup, we granted Glue Data Catalog permissions to datalake-user in an IAM policy. Let's have a look at how-permissions are set up on the cleanzonedb database and tables in Lake Formation</p>
+<h3>Go to Lake Formation service, first time when you access a pop-up box will show up -> Add Myself -> Get Started. On next page select Data Lake Administrator as Access type -> Confirm</h3>
+<p align="left">
+  <img src="screenshots/12.png" width="1000" height="600"/>
+</p>
+
+
+
+
+
+
+
+
+
+

@@ -14,3 +14,25 @@
 <p align="left">
   <img src="screenshots/3.png" width="1000" height="600"/>
 </p>
+<h2>Create IAM Policy and Role for Lambda function</h2>
+<h3>AWS Management Console -> IAM service -> left-hand menu select Policies -> Create policy</h3>
+<p align="left">
+  <img src="screenshots/4.png" width="1000" height="600"/>
+</p>
+<h3>Copy the JSON code from the json file attached in github: DataEngLambdaS3CWGluePolicy -> paste it on JSON Tab in Policy Editor -> Next</h3>
+<p align="left">
+  <img src="screenshots/5.png" width="1000" height="600"/>
+</p>
+<h3>provide name for for the policy -> Create policy</h3>
+<p align="left">
+  <img src="screenshots/6.png" width="1000" height="600"/>
+</p>
+<h2>Now lets create Role</h2>
+<h3>IAM service -> in the left-hand meny select Roles -> Create Role -> ensure AWS service is selected -> for the service select Lambda -> Next</h3>
+<p align="left">
+  <img src="screenshots/7.png" width="1000" height="600"/>
+</p>
+<h3>under Add Permissions -> select the policy we just created -> tick the policy box -> Next</h3>
+<p align="left">
+  <img src="screenshots/8.png" width="1000" height="600"/>
+</p>

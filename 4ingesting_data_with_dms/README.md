@@ -21,3 +21,24 @@
 <p align="left">
   <img src="screenshots/5.png" width="1000" height="600"/>
 </p>
+<h2>2.We will create an IAM policy and role that will allow DMS to write to our target S3 bucket</h2>
+<h3>IAM service -> Policies -> Create policy -> replace the boilerplate code in the box with the code in picture -> Next</h3>
+<p align="left">
+  <img src="screenshots/6.png" width="1000" height="600"/>
+</p>
+<h3>Provide policy name</h3>
+<p align="left">
+  <img src="screenshots/7.png" width="1000" height="600"/>
+</p>
+<h3>Trusted Entity Type: AWS Service -> Use case: DMS -> Next</h3>
+<p align="left">
+  <img src="screenshots/8.png" width="1000" height="600"/>
+</p>
+<h3>Add permissions -> select policy name we just created -> Next</h3>
+<p align="left">
+  <img src="screenshots/9.png" width="1000" height="600"/>
+</p>
+<h3>provide a descriptive Role name -> Create Role</h3>
+<p align="left">
+  <img src="screenshots/9.png" width="1000" height="600"/>
+</p>

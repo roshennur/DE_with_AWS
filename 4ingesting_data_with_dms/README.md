@@ -40,47 +40,55 @@
 </p>
 <h3>provide a descriptive Role name -> Create Role</h3>
 <p align="left">
-  <img src="screenshots/9.png" width="1000" height="600"/>
+  <img src="screenshots/10.png" width="1000" height="600"/>
 </p>
 <h2>3.Configuring DMS settings and performing a full load from MySQL to S3</h2>
 <p>We will create DMS replication instance(a managed EC2 instance that connects to the source endpoint, retrieves data, and writes to the target endpoint)</p>
 <h3>DMS service -> Migrate or Replicate -> Replication instances -> Create replication instance -> provide name -> instance class: dms:t3:micro -> Allocated storage: 10 -> High Availability: Dev or test workload</h3>
 <p align="left">
-  <img src="screenshots/10.png" width="1000" height="600"/>
+  <img src="screenshots/11.png" width="1000" height="600"/>
 </p>
 <h3>Vpc dropdown -> default VPC -> Create replication instance</h3>
 <p align="left">
-  <img src="screenshots/11.png" width="1000" height="600"/>
+  <img src="screenshots/12.png" width="1000" height="600"/>
 </p>
 <h3>DMS -> Migrate or Replicate -> Endpoints -> Create endpoint -> Source endpoint -> Select RDS DB instance -> select MySQL DATABASE that was created by the CloudFormation template/h3>
 <p align="left">
-  <img src="screenshots/12.png" width="1000" height="600"/>
+  <img src="screenshots/13.png" width="1000" height="600"/>
 </p>
 <h3>select Provide access information manually -> enter the password for MySQL db -> SSL mode: select NONE -> Create Endpoint button</h3>
 <p align="left">
-  <img src="screenshots/13.png" width="1000" height="600"/>
+  <img src="screenshots/14.png" width="1000" height="600"/>
 </p>
 <h3>DMS -> Migrate or Replicate -> Endpoints -> Create endpoint -> select Target endpoint -> provide name for endpoint -> Target engine: Amazon S3</h3>
 <p align="left">
-  <img src="screenshots/14.png" width="1000" height="600"/>
+  <img src="screenshots/15.png" width="1000" height="600"/>
 </p>
 <h3>Amazon S3 bucket: landing-zone bucket name -> IAM role: the role we created for s3 bucket -> Create endpoint</h3>
 <p align="left">
-  <img src="screenshots/15.png" width="1000" height="600"/>
+  <img src="screenshots/16.png" width="1000" height="600"/>
 </p>
 <h3>DMS -> Tasks -> Create Task -> provide name for Task identifier -> select the endpoints accordingly we created for Source and Target endpoints</h3>
 <p align="left">
-  <img src="screenshots/16.png" width="1000" height="600"/>
+  <img src="screenshots/17.png" width="1000" height="600"/>
 </p>
 <h3>Schema name: %sakila% -> Schema table name: % -> Selection rules: default -> Create Task</h3>
 <p align="left">
-  <img src="screenshots/17.png" width="1000" height="600"/>
+  <img src="screenshots/18.png" width="1000" height="600"/>
 </p>
-
-
-
-
-
+<h2>4.Querying data with Amazon Athena</h2>
+<h3>S3 service -> Create bucket -> provide bucket name -> Create bucket</h3>
+<p align="left">
+  <img src="screenshots/19.png" width="1000" height="600"/>
+</p>
+<h3>Athena service -> Query Settings -> Manage -> Location of query result: provide s3 bucket name we created</h3>
+<p align="left">
+  <img src="screenshots/20.png" width="1000" height="600"/>
+</p>
+<h3>Editor tab -> Database dropdown, select sakila from list -> run SQL query "select * from film limit 20"</h3>
+<p align="left">
+  <img src="screenshots/21.png" width="1000" height="600"/>
+</p>
 
 
 

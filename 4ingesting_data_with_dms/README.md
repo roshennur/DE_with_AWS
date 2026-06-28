@@ -89,8 +89,19 @@
 <p align="left">
   <img src="screenshots/21.png" width="1000" height="600"/>
 </p>
-
-
+<h2>5.deleting the DMS replication to save cost</h2>
+<h3>DMS -> Tasks -> we need to delete the task before we can delete the associated replication instance -> select task -> Actions -> Delete</h3>
+<p align="left">
+  <img src="screenshots/22.png" width="1000" height="600"/>
+</p>
+<h3>DMS -> Replication Instances -> Actions -> Delete</h3>
+<p align="left">
+  <img src="screenshots/23.png" width="1000" height="600"/>
+</p>
+<h3>CloudFormation service -> Stacks -> select the stack we deployed -> Delete</h3>
+<p align="left">
+  <img src="screenshots/24.png" width="1000" height="600"/>
+</p>
 
 
 

@@ -63,9 +63,17 @@
 </p>
 <h3>Configuration Tab -> Timeout: 5 minute -> Save</h3>
 <p align="left">
-  <img src="screenshots/14.png" width="1000" height="600"/>
+  <img src="screenshots/15.png" width="1000" height="600"/>
 </p>
-
+<h2>Configuring Lambda function to be triggered by an S3 upload</h2>
+<h3>Lambda -> Add Triggers -> Trigger configuration: s3 -> select bucket name for landing zone -> All object create events -> suffix: .csv -> acknowledge the Recursive invocation -> Add</h3>
+<p align="left">
+  <img src="screenshots/16.png" width="1000" height="600"/>
+</p>
+<h3>S3 -> dataeng-landing-zone -> create cleanzonedb -> create csvtoparquet -> upload csv file in it </h3>
+<p align="left">
+  <img src="screenshots/17.png" width="1000" height="600"/>
+</p>
 
 
 

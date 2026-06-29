@@ -45,3 +45,59 @@
 <p align="left">
   <img src="screenshots/11.png" width="1000" height="600"/>
 </p>
+<h2>Adding newly ingested data to the Glue Data Catalog</h2>
+<h3>Glue service -> Crawlers -> Create crawler -> provide name -> Next</h3>
+<p align="left">
+  <img src="screenshots/12.png" width="1000" height="600"/>
+</p>
+<h3>Data source -> add data source -> S3 path: dataeng-landing-zone/streams/ -> add an s3 data source</h3>
+<p align="left">
+  <img src="screenshots/13.png" width="1000" height="600"/>
+</p>
+<h3>Leave other settings as default on Data source configuration page -> Next</h3>
+<p align="left">
+  <img src="screenshots/14.png" width="1000" height="600"/>
+</p>
+<h3>IAM role -> create new IAM role -> provide name -> Create</h3>
+<p align="left">
+  <img src="screenshots/15.png" width="1000" height="600"/>
+</p>
+<h3>Set output and scheduling page -> Add database -> Glue database -> provide name: streaming_db -> Create database</h3>
+<p align="left">
+  <img src="screenshots/16.png" width="1000" height="600"/>
+</p>
+<h3>Output configuration -> select streaming_db -> Next</h3>
+<p align="left">
+  <img src="screenshots/17.png" width="1000" height="600"/>
+</p>
+<h3>Review and Create: create crawler</h3>
+<p align="left">
+  <img src="screenshots/18.png" width="1000" height="600"/>
+</p>
+<h3>select new crawler from list -> run crawler -> wait until completed</h3>
+<p align="left">
+  <img src="screenshots/19.png" width="1000" height="600"/>
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

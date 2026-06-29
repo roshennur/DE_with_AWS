@@ -36,3 +36,65 @@
 <p align="left">
   <img src="screenshots/8.png" width="1000" height="600"/>
 </p>
+<h3>provide Role name -> Create role</h3>
+<p align="left">
+  <img src="screenshots/9.png" width="1000" height="600"/>
+</p>
+<h2>Creating Lambda Function</h2>
+<h3>Lambda service -> Functions -> Create Function</h3>
+<p align="left">
+  <img src="screenshots/10.png" width="1000" height="600"/>
+</p>
+<h3>Select author from scratch -> provide function name -> Runtime: python 3.14 -> Custom execution role: select the role we created -> Create Function</h3>
+<p align="left">
+  <img src="screenshots/11.png" width="1000" height="600"/>
+</p>
+<h3>Functions -> Layers -> Add layer</h3>
+<p align="left">
+  <img src="screenshots/12.png" width="1000" height="600"/>
+</p>
+<h3>select Custom layer -> select AWS SDK for pandas from dropdown -> Add</h3>
+<p align="left">
+  <img src="screenshots/13.png" width="1000" height="600"/>
+</p>
+<h3>Code Source in Functions page -> copy the python code from CSVtoParquetLambda.py and replace it with any code in lambda_function -> Deploy</h3>
+<p align="left">
+  <img src="screenshots/14.png" width="1000" height="600"/>
+</p>
+<h3>Configuration Tab -> Timeout: 5 minute -> Save</h3>
+<p align="left">
+  <img src="screenshots/14.png" width="1000" height="600"/>
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

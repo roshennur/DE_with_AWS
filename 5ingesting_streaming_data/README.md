@@ -78,6 +78,12 @@
 <p align="left">
   <img src="screenshots/19.png" width="1000" height="600"/>
 </p>
+<h2>Querying the data with Amazon Athena</h2>
+<h3>Athena -> select Database: streaming_db -> run query: select * from streaming</h3>
+<p align="left">
+  <img src="screenshots/20.png" width="1000" height="600"/>
+</p>
+
 
 
 
